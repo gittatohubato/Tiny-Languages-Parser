@@ -1,0 +1,43 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Tree_GUI_V_2_0_.jnlp'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedTree_GUI_V_2_0__id() {
+        dtjava.embed(
+            {
+                id : 'Tree_GUI_V_2_0__id',
+                url : 'Tree_GUI_V_2_0_.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '600',
+                height : '400'
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedTree_GUI_V_2_0__id);
+</script>
+
+</head><body>
+<h2>Test page for <b>Parser</b></h2>
+  <b>Webstart:</b> <a href='Tree_GUI_V_2_0_.jnlp' onclick="return launchApplication('Tree_GUI_V_2_0_.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>
